@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*Variabler*/
+/*Mixins*/
+/*Generel styling*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+.knap {
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  background-color: #13E2AC;
+  color: #000000;
+  border: none;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  padding: 0.5em;
+}
+.knap:hover {
+  background-color: #000000;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+header, footer {
+  padding-right: 1em;
+  padding-left: 1em;
+  display: flex;
+  justify-content: space-between;
+  background-color: #13E2AC;
+}
+header p, footer p {
+  color: white;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: normal;
+}
+
+footer {
+  justify-content: center;
+}
+
+/*Scenarios*/
+/*Mobil*/
+/*Scene 1 & Scene 3*/
+#scene1, #scene3-1, #scene3-2, #scene3-3 {
+  background-image: url(../conartist/img/inboxmobile-01.svg);
+  background-size: cover;
+  height: 600px;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  margin: 0.5em;
+}
+
+#popup, #feedback1, #feedback2, #feedback3 {
+  display: block;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 35px;
+  border: solid 1px #000000;
+  padding: 1em;
+  text-align: center;
+  margin: 1em;
+}
+
+.valg {
+  display: block;
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 35px;
+  border: solid 1px #000000;
+  padding: 1em;
+  text-align: center;
+  margin: 1.5em;
+}
+
+/*Scene 2*/
+#valgknapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+/*Desktop*/
+@media (min-width: 1000px) {
+  /*Scene 1 & scene 3*/
+  #scene1, #scene3-1, #scene3-2, #scene3-3 {
+    background-image: url(../conartist/img/inboxbaggrund-01-01-01.svg);
+    background-size: cover;
+    height: 900px;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin: 1em;
+  }
+  #popup, #feedback1, #feedback2, #feedback3 {
+    display: block;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 35px;
+    border: solid 2px #000000;
+    padding: 8em;
+    margin-right: 24em;
+    margin-left: 24em;
+    text-align: center;
+  }
+  #popup #knap1, #feedback1 #knap1, #feedback2 #knap1, #feedback3 #knap1 {
+    margin-top: 2em;
+  }
+  #popup .fortsætknap, #feedback1 .fortsætknap, #feedback2 .fortsætknap, #feedback3 .fortsætknap {
+    margin-top: 3em;
+  }
+  /*Scene 2*/
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .valg {
+    padding: 6em;
+    margin-right: 25em;
+    margin-left: 25em;
+    border: solid 2px #000000;
+  }
+}/*# sourceMappingURL=style.css.map */

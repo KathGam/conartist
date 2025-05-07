@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Con.Artist</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@800&display=swap" rel="stylesheet">
+    <script src="scenarios.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>CON.ARTIST</p>
+        <p>MAILBOX</p>
+    </header>
+    <main>
+        <section id="scene1" class="scenario">
+            <div id="popup">
+                <p>Du har modtaget 1 ny mail!</p>
+                <button id=knap1 class="knap" >Åben mail</button>
+            </div>
+        </section>
+
+        <section id="scene2" class="scenario">
+            <div>
+                <img class="mobile" aria-label="Eksempel på phising mail, der hævder at din bankkonto bliver spærret, hvis ikke du bekræfter din konto" src="img/phisingmail-mobile-01-01.svg" alt="phising eksempel">
+                <img class="desktop" aria-label="Eksempel på phising mail, der hævder at din bankkonto bliver spærret, hvis ikke du bekræfter din konto" src="img/phisingmail-desktop-01-01.svg" alt="phising eksempel">
+            </div>
+            <div class="valg">
+                <p>Hvad ønsker du at gøre?</p>
+                <div id="valgknapper" >
+                    <button id=knap2 class="knap" >Åben link</button>
+                    <button id=knap3 class="knap" >Besvar mail</button>
+                    <button id=knap4 class="knap" >Ignore og slet</button>
+               </div>
+            </div>
+        </section>
+
+        <section id="scene3-1" class="scenario">
+            <div id="feedback1">
+                <div>
+                    <p>Åh nej, du klikkede på linket!</p>
+                    <p>En virus er nu downloadet på din computer og dine oplysninger er ved at blive hentet af en hacker.</p>
+                    <p>Too bad!</p>
+                </div>
+                <div class="fortsætknap" >
+                    <button id=knap5 class="knap" >Fortsæt</button>
+               </div>
+            </div>
+        </section>
+
+        <section id="scene3-2" class="scenario">
+            <div id="feedback2">
+                <div>
+                    <p>Forkert valg!</p>
+                    <p>At besvar en sådan mail øger risikoen for svindel eller hacking.</p>
+                    <p>Bedste løsning: Slet med det samme, uden at tage kontakt.</p>
+                </div>
+                <div class="fortsætknap" >
+                    <button id=knap6 class="knap" >Fortsæt</button>
+               </div>
+            </div>
+        </section>
+
+        <section id="scene3-3" class="scenario">
+            <div id="feedback3">
+                <div>
+                    <p>Tillykke du fik ikke virus denne gang!</p>
+                    <p>Bliv ved med at undvige dine scammers, så du ikke bliver snydt.</p>
+                </div>
+                <div class="fortsætknap" >
+                    <button id=knap7 class="knap" >Fortsæt</button>
+               </div>
+            </div>
+        </section>
+
+        <section id="facts">
+            <div>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

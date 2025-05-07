@@ -1,0 +1,165 @@
+/*Variabler*/
+
+$primary-color: white;
+$second-color: #13E2AC;
+$primary-font: "Stick No Bills", sans-serif;
+$paragraph-font: 'Inter', sans-serif;
+$text-color: #000000; 
+
+/*Mixins*/
+
+@mixin btn ($bg-color: $second-color, $btn-radius: 35px, $btn-padding: 0.5em, $text: $text-color, $font: $primary-font) {
+    display: flex;
+    justify-content: center;
+    border-radius: $btn-radius;
+    background-color: $bg-color;
+    color: $text;
+    border: none;
+    font-family: $font;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    padding: $btn-padding;
+}
+
+
+@mixin feedbackbox ($box-color: $primary-color, $box-margin: 1em, $box-padding: 1em,) {
+    background-color: $box-color;
+    border-radius: 35px;
+    border: solid 1px #000000;
+    text-align: center;
+    padding: $box-padding;
+    margin: $box-margin;
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+
+/*Generel styling*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $primary-color;
+}
+
+img{
+    max-width: 100%;
+}
+
+p {
+    font-family: $paragraph-font;
+    font-size: 18px
+}
+
+
+.knap {
+    @include btn;
+
+        &:hover {
+            background-color: #000000;
+            color: $primary-color;
+            transition: 0.3s ease-in-out;
+        }
+}
+
+header {
+    padding-right: 1em;
+    padding-left: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color: $second-color;
+
+    p {
+        color: $primary-color;
+        font-family: $primary-font;
+        font-size: 24px;
+        font-weight: 800;
+        font-style: normal;
+    }
+}
+
+
+.scenario {
+    display: none;
+}
+
+/*Scenarios*/
+
+/*Scene 1 & Scene 3*/
+#scene1, #scene3-1, #scene3-2, #scene3-3 {
+    background-image: url(../conartist/img/inboxmobile-01.svg); /*Sætter baggrund på mobil version*/
+    background-size: cover;
+    height: 1200px;
+}
+
+#popup, #feedback1, #feedback2, #feedback3 {
+
+    @include feedbackbox;
+}
+
+
+/*Scene 2*/
+
+.valg {
+
+    @include feedbackbox ($box-margin: 1.5em);
+}
+
+#valgknapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.mobile {
+    display: block; /*Viser rigtige billede i mobileversion*/
+}
+
+.desktop {
+    display: none; /*Skjuler billede fra desktopversion*/
+}
+
+
+/*Desktop*/
+@media (min-width: 1000px) {
+
+    /*Scene 1 & scene 3*/
+    #scene1, #scene3-1, #scene3-2, #scene3-3 {
+        background-image: url(../conartist/img/inboxbaggrund-01-01-01.svg); /*Sætter baggrund for desktop*/
+        margin: 1em;
+    }
+
+    #popup, #feedback1, #feedback2, #feedback3 {
+        padding: 8em;
+        margin-right: 24em;
+        margin-left: 24em;
+
+        #knap1 {
+            margin-top: 2em;
+        }
+
+        .fortsætknap {
+            margin-top: 3em;
+        }
+    }
+
+    /*Scene 2*/
+    .desktop {
+        display: block; /*Viser rigtige billede i desktopversion*/
+    }
+
+    .mobile {
+        display: none; /*Skjuler billede fra mobilversion*/
+    }
+
+    .valg {
+        padding: 6em;
+        margin-right: 25em;
+        margin-left: 25em;
+    }
+
+}
