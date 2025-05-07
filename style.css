@@ -62,13 +62,16 @@ header p {
 #scene1, #scene3-1, #scene3-2, #scene3-3 {
   background-image: url(../conartist/img/inboxmobile-01.svg); /*Sætter baggrund på mobil version*/
   background-size: cover;
-  height: 1200px;
+  height: 1000px;
   display: block;
-  justify-content: center;
+  justify-items: center;
   align-content: center;
 }
 
 #popup, #feedback1, #feedback2, #feedback3 {
+  display: block;
+  justify-items: center;
+  align-content: center;
   background-color: white;
   border-radius: 35px;
   border: solid 1px #000000;
@@ -78,22 +81,19 @@ header p {
   display: block;
   justify-content: center;
   align-content: center;
-  display: block;
-  justify-content: center;
-  align-content: center;
 }
 
 /*Scene 2*/
 .valg {
+  display: block;
+  justify-items: center;
+  align-content: center;
   background-color: white;
   border-radius: 35px;
   border: solid 1px #000000;
   text-align: center;
   padding: 1em;
   margin: 1.5em;
-  display: block;
-  justify-content: center;
-  align-content: center;
   display: block;
   justify-content: center;
   align-content: center;
@@ -121,11 +121,10 @@ header p {
   #scene1, #scene3-1, #scene3-2, #scene3-3 {
     background-image: url(../conartist/img/inboxbaggrund-01-01-01.svg); /*Sætter baggrund for desktop*/
     margin: 1em;
+    height: 1000px;
   }
   #popup, #feedback1, #feedback2, #feedback3 {
     padding: 8em;
-    margin-right: 24em;
-    margin-left: 24em;
   }
   #popup #knap1, #feedback1 #knap1, #feedback2 #knap1, #feedback3 #knap1 {
     margin-top: 2em;
@@ -142,7 +141,7 @@ header p {
   }
   .valg {
     padding: 6em;
-    margin-right: 25em;
-    margin-left: 25em;
+    margin-right: 40em;
+    margin-left: 40em;
   }
 }/*# sourceMappingURL=style.css.map */
