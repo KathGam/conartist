@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     showScene(lastScene);
-  
+
 
     document.querySelectorAll('.knap').forEach(knap => {
       knap.addEventListener('click',() => {
