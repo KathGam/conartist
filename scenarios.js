@@ -62,6 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
             showScene ('#facts');
             logChoice('Valgt: facts');
             break;
+
+          case 'knap8':
+            showScene ('#scene1');
+            logChoice('Valgt: scene1');
+            break;
         }
       });
     });

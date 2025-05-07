@@ -11,6 +11,7 @@ $text-color: #000000;
 @mixin btn ($bg-color: $second-color, $btn-radius: 35px, $btn-padding: 0.5em, $text: $text-color, $font: $primary-font) {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: $btn-radius;
     background-color: $bg-color;
     color: $text;
@@ -22,6 +23,11 @@ $text-color: #000000;
     padding: $btn-padding;
 }
 
+@mixin position ($position-margin: 0.5em) {
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
 
 @mixin feedbackbox ($box-color: $primary-color, $box-margin: 1em, $box-padding: 1em,) {
     background-color: $box-color;
@@ -92,11 +98,15 @@ header {
     background-image: url(../conartist/img/inboxmobile-01.svg); /*Sætter baggrund på mobil version*/
     background-size: cover;
     height: 1200px;
+
+    @include position;
 }
 
 #popup, #feedback1, #feedback2, #feedback3 {
 
     @include feedbackbox;
+
+    @include position;
 }
 
 
@@ -105,6 +115,8 @@ header {
 .valg {
 
     @include feedbackbox ($box-margin: 1.5em);
+
+    @include position;
 }
 
 #valgknapper {
