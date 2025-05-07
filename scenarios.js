@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.knap').forEach(knap => {
       knap.addEventListener('click',() => {
-        const knap = knap.id;
+        const knapId = knap.id;
 
-        switch (knap) {
+        switch (knapId) {
 
           case 'knap1':
             showScene ('#scene2');
@@ -50,23 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
 
           case 'knap5':
-            showScene
+            showScene ('#facts');
+            break;
+
+          case 'knap6':
+            showScene ('#facts');
+            break;
+
+          case 'knap7':
+            showScene ('#facts');
+            break;
         }
-
-
       }
       )
     })
-    
-
-
-
-    document.querySelector('#knap1').addEventListener('click', () => showScene('#scene2'));
-    document.querySelector('#knap2').addEventListener('click', () => showScene('#scene3-1'));
-    document.querySelector('#knap3').addEventListener('click', () => showScene('#scene3-2'));
-    document.querySelector('#knap4').addEventListener('click', () => showScene('#scene3-3'));
-    document.querySelector('#knap5').addEventListener('click', () => showScene('#facts'));
-    document.querySelector('#knap6').addEventListener('click', () => showScene('#facts'));
-    document.querySelector('#knap7').addEventListener('click', () => showScene('#facts'));
   });
 
