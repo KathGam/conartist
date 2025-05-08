@@ -53,10 +53,6 @@ header p {
   font-style: normal;
 }
 
-.scenario {
-  display: none;
-}
-
 /*Scenarios*/
 /*Scene 1 & Scene 3*/
 #scene1, #scene3-1, #scene3-2, #scene3-3 {
