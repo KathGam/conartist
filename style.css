@@ -133,7 +133,7 @@ h1 {
   margin-left: 35px;
   margin-right: 35px;
 }
-#info .fisk {
+#info .fisk, #info .fisk1 {
   display: block;
   justify-items: center;
   width: auto;
@@ -142,6 +142,23 @@ h1 {
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 1em;
+}
+#info #deskfisk {
+  display: none;
+}
+#info h2, #info h3 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2em;
+}
+#info ul {
+  list-style: none;
+}
+#info .husk {
+  margin-top: 2em;
 }
 
 .tilbageknap {
@@ -187,5 +204,8 @@ h1 {
   #info .fisk {
     width: 800px;
     height: auto;
+  }
+  #info #deskfisk {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */

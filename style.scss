@@ -154,7 +154,7 @@ h1 {
        margin-right: 35px;
     }
 
-    .fisk {
+    .fisk, .fisk1 {
         display: block;
         justify-items: center;
         width: auto;
@@ -163,6 +163,28 @@ h1 {
         margin-left: 2em;
         margin-right: 2em;
         margin-bottom: 1em;
+    }
+
+    #deskfisk {
+        display: none;
+    }
+
+
+    h2, h3 {
+        font-family: $primary-font;
+        font-size: 24px;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .husk {
+        margin-top: 2em;
     }
 }
 
@@ -221,5 +243,9 @@ h1 {
             width: 800px;
             height: auto;                           
           }
+
+        #deskfisk {
+            display: block;
+        }
     }
 }
