@@ -166,7 +166,7 @@ h1 {
     }
 
     #deskfisk {
-        display: none;
+        display: none; /*fjerne ekstra billede i mobilversion*/
     }
 
 
@@ -245,7 +245,7 @@ h1 {
           }
 
         #deskfisk {
-            display: block;
+            display: block; /*tilføjer ekstra billede i desktopversion*/
         }
     }
 }

@@ -144,7 +144,7 @@ h1 {
   margin-bottom: 1em;
 }
 #info #deskfisk {
-  display: none;
+  display: none; /*fjerne ekstra billede i mobilversion*/
 }
 #info h2, #info h3 {
   font-family: "Stick No Bills", sans-serif;
@@ -206,6 +206,6 @@ h1 {
     height: auto;
   }
   #info #deskfisk {
-    display: block;
+    display: block; /*tilføjer ekstra billede i desktopversion*/
   }
 }/*# sourceMappingURL=style.css.map */
