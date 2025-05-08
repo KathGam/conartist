@@ -55,7 +55,7 @@ header p {
 
 /*Scenarios*/
 /*Scene 1 & Scene 3*/
-#scene1, #scene3-1, #scene3-2, #scene3-3 {
+#scene1, #scene3-1, #scene3-2, #scene3-3, #scene5 {
   background-image: url(../conartist/img/inboxmobile-01.svg); /*Sætter baggrund på mobil version*/
   background-size: cover;
   height: 1000px;
@@ -64,7 +64,7 @@ header p {
   align-content: center;
 }
 
-#popup, #feedback1, #feedback2, #feedback3 {
+#popup, #feedback1, #feedback2, #feedback3, #snydt {
   display: block;
   justify-items: center;
   align-content: center;
@@ -95,7 +95,7 @@ header p {
   align-content: center;
 }
 
-#valgknapper, .tilbageknap {
+#valgknapper, .tilbageknap, .send {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,18 +151,18 @@ h1 {
 /*Desktop*/
 @media (min-width: 1000px) {
   /*Scene 1 & scene 3*/
-  #scene1, #scene3-1, #scene3-2, #scene3-3 {
+  #scene1, #scene3-1, #scene3-2, #scene3-3, #scene5 {
     background-image: url(../conartist/img/inboxbaggrund-01-01-01.svg); /*Sætter baggrund for desktop*/
     margin: 1em;
     height: 1000px;
   }
-  #popup, #feedback1, #feedback2, #feedback3 {
+  #popup, #feedback1, #feedback2, #feedback3, #snydt {
     padding: 8em;
   }
-  #popup #knap1, #feedback1 #knap1, #feedback2 #knap1, #feedback3 #knap1 {
+  #popup #knap1, #feedback1 #knap1, #feedback2 #knap1, #feedback3 #knap1, #snydt #knap1 {
     margin-top: 2em;
   }
-  #popup .fortsætknap, #feedback1 .fortsætknap, #feedback2 .fortsætknap, #feedback3 .fortsætknap {
+  #popup .fortsætknap, #feedback1 .fortsætknap, #feedback2 .fortsætknap, #feedback3 .fortsætknap, #snydt .fortsætknap {
     margin-top: 3em;
   }
   /*Scene 2*/

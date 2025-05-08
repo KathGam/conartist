@@ -77,6 +77,16 @@ document.addEventListener('DOMContentLoaded', () => {
             showScene ('#scene1');
             logChoice('Valgt: scene1');
             break; // Bestemmer at knap8 skal gå til scene1, samt at dette bliver logget i localstorage. Her starter scenariet forfra :). 
+
+          case 'knap9':
+            showScene ('#scene5');
+            logChoice('Valgt: scene5');
+            break; // Bestemmer at knap 9 skal gå til scene5.
+
+          case 'knap10':
+            showScene ('#scene1');
+            logChoice('Valgt: scene1');
+            break; // Bestemmer at knap10 skal gå til scene1, samt at dette bliver logget i localstorage. Her starter scenariet forfra :). 
         }
       });
     });
