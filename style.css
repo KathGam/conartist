@@ -10,7 +10,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%; /*Ingen horizational scroll*/
 }
 
 p {
@@ -54,7 +54,7 @@ header p {
 }
 
 /*Scenarios*/
-/*Scene 1 & Scene 3*/
+/*Scene 1, Scene 3 & scene 5*/
 #scene1, #scene3-1, #scene3-2, #scene3-3, #scene5 {
   background-image: url(../conartist/img/inboxmobile-01.svg); /*Sætter baggrund på mobil version*/
   background-size: cover;
@@ -167,7 +167,7 @@ h1 {
 
 /*Desktop*/
 @media (min-width: 1000px) {
-  /*Scene 1 & scene 3*/
+  /*Scene 1, scene 3 & scene 5*/
   #scene1, #scene3-1, #scene3-2, #scene3-3, #scene5 {
     background-image: url(../conartist/img/inboxbaggrund-01-01-01.svg); /*Sætter baggrund for desktop*/
     margin: 1em;
