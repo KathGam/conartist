@@ -95,7 +95,7 @@ header p {
   align-content: center;
 }
 
-#valgknapper {
+#valgknapper, .tilbageknap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,6 +109,43 @@ header p {
 
 .desktop {
   display: none; /*Skjuler billede fra desktopversion*/
+}
+
+/*facts (scene4)*/
+h1 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  font-style: normal;
+  text-align: center;
+  margin-top: 1em;
+}
+
+#info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#info .tekst {
+  display: block;
+  justify-items: center;
+  margin: 10px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+#info .fisk {
+  display: block;
+  justify-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 35px;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+.tilbageknap {
+  margin-bottom: 3em;
 }
 
 /*Desktop*/
@@ -139,5 +176,16 @@ header p {
     padding: 6em;
     margin-right: 40em;
     margin-left: 40em;
+  }
+  /*Facts (scene 4)*/
+  #info {
+    justify-content: space-around;
+  }
+  #info .tekst {
+    width: 850px;
+  }
+  #info .fisk {
+    width: 800px;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
